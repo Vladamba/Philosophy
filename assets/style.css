@@ -1,0 +1,132 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #083c7b;
+    background-image: url("images/greece.jpg");
+    background-position: center center;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+}
+
+.r {
+    color: red;
+}
+
+.g {
+    color: #26b126;
+}
+
+.w {
+    color: white;
+}
+
+.y {
+    color: #ffae00;
+}
+
+.time {
+    text-decoration: underline;
+}
+
+.introText {
+    color: #ffae00;
+    text-shadow: 3px 3px 1px black;
+}
+
+#intro {
+    font-size: 52px;
+}
+
+#question {
+    font-size: 36px;
+}
+
+#headerText{
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-family: bold;
+}
+
+#mainText {
+    font-size: 30px;
+    color: #ffae00;
+    text-shadow: 2px 2px 1px black,
+        -1px -1px 1px black;
+}
+
+#container{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 80%;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 100px 10%;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-size: 20px;
+    color: black;
+    margin: 2px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.button:hover{
+    color: #e1aa35;
+}
+
+#image {
+    margin: 10px 0;
+    display: none;
+    height: 400px;
+    width:  auto;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url("images/greece_m.jpg");
+    }
+
+    #image {
+        width: 90%;
+        height: auto;
+    }
+
+    .button:hover{
+        color: black;
+    }
+
+    #intro {
+        font-size: 42px;
+    }
+
+    #question {
+        font-size: 26px;
+    }
+
+    #headerText{
+        font-size: 30px;
+    }
+
+    #mainText {
+        font-size: 20px;
+    }
+
+    .button {
+        font-size: 15px;
+    }
+}
